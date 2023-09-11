@@ -20,6 +20,8 @@ Además, el script utiliza el comando paplay para reproducir los sonidos de aler
 ``git clone https://github.com/titir1x/notebook-battery-indicator.git``
 ### Navega al directorio del repositorio:
 ``cd notebook-battery-indicator``
+### Permisos de ejecución:
+``chmod +x battery_indicator.sh``
 ### Ejecuta el script:
 ``./battery_indicator.sh``
 #### El script se ejecutará en segundo plano y monitoreará continuamente el nivel de batería de tu notebook. Reproducirá un sonido de alerta cuando el nivel de batería alcance el 20%, un sonido de completado tras llegar al 80% de carga y 2 sonidos de completado al llegar al 100% de carga.
