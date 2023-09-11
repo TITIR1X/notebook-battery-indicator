@@ -33,6 +33,9 @@ while true; do
         paplay /usr/share/sounds/freedesktop/stereo/complete.oga
     fi
 
+    # Esperar 5 minutos para la siguiente comprobación
+    sleep 300
+
 done
 
 # Eliminar el archivo de bloqueo al finalizar
