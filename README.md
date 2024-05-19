@@ -2,7 +2,9 @@
 
 Las baterías de iones de litio, que son comunes en las notebooks modernas, generalmente tienen una vida útil más larga si se mantienen en un rango de carga entre el 20% y el 80%. Mantener la carga de la batería dentro de este rango puede ayudar a reducir el desgaste y el envejecimiento de la batería a largo plazo.
 
-Este repositorio contiene un script de shell llamado "battery_indicator.sh" que proporciona una funcionalidad de indicación de batería para notebooks. El script monitorea continuamente el nivel de batería de la notebook y reproduce un sonido de alerta cuando el nivel de batería alcanza el 20%, 80% y el 100%.
+Este repositorio contiene un script de shell llamado "battery_indicator.sh" que proporciona una funcionalidad de indicación de batería para notebooks. El script monitorea continuamente el nivel de batería de la notebook y reproduce un sonido de alerta cuando el nivel de batería alcanza el 80% y el 100%.
+
+Y genera un bloqueo con i3lock-fancy al llegar al 20% de batería, indicando que hay que conectar la computadora. El bloqueo se desbloquea con la contraseña del usuario.
 
 Desconecte el cargador del equipo cuando la batería llegue al 80% de carga (se le indicará con el sonido ``paplay /usr/share/sounds/freedesktop/stereo/message-new-instant.oga``), esto para evitar la sobrecarga de batería.
 
@@ -13,7 +15,9 @@ El script utiliza el comando acpi para obtener el nivel de batería actual. Aseg
 
 ``sudo apt-get install acpi``
 
-Además, el script utiliza el comando paplay para reproducir los sonidos de alerta. Asegúrate de tener instalado paplay en tu sistema y de que los archivos de sonido estén ubicados en las rutas especificadas en el script.
+Instalar i3lock-fancy -> https://github.com/meskarune/i3lock-fancy
+
+El también script utiliza el comando paplay para reproducir los sonidos de alerta. Asegúrate de tener instalado paplay en tu sistema y de que los archivos de sonido estén ubicados en las rutas especificadas en el script.
 
 ## Uso
 ### Clona el repositorio en tu sistema:

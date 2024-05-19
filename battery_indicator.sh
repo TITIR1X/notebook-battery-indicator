@@ -7,7 +7,8 @@ while true; do
 
     # Reproducir un sonido suave cuando la batería alcanza el 20%
     if [ $battery_level -le 20 ]; then
-        paplay /usr/share/sounds/freedesktop/stereo/message-new-instant.oga
+        i3lock-fancy
+        #paplay /usr/share/sounds/freedesktop/stereo/message-new-instant.oga
     fi
 
     # Reproducir un sonido suave cuando la batería alcanza el 80%
@@ -22,7 +23,7 @@ while true; do
         paplay /usr/share/sounds/freedesktop/stereo/complete.oga
     fi
 
-    # Esperar 10 minutos para la siguiente comprobación
-    sleep 600
+    # Esperar 5 minutos para la siguiente comprobación
+    sleep 300
 
 done
